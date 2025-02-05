@@ -195,10 +195,10 @@ def optimize_pipeline(pipeline, x_train, y_train):
     scoring = make_scorer(balanced_accuracy_score)
 
     param_grid = {
-        "pca__n_components": [0.9, 0.95],
-        "k_best__k": [5, 10, 13],
-        "model__C": [1, 10],
-        "model__gamma": [0.1, 1, 10],
+        "pca__n_components": [20, x_train.shape[1] - 2],
+        "k_best__k": [12, 13],
+        "model__C": [1],
+        "model__gamma": [0.1],
     }
 
     grid_search = GridSearchCV(
