@@ -18,7 +18,7 @@ MODEL_COMPONENTS = [
     "SVC",
 ]
 SCORES = [
-    0.661,
+    0.660,
     0.666,
 ]
 METRICS = [
